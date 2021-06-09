@@ -1,6 +1,7 @@
 ### 具体组件介绍
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210609140700136.png" alt="image-20210609140700136" style="zoom:67%;" />
+![图片](https://user-images.githubusercontent.com/39020574/121310854-6253ad00-c936-11eb-9000-4f8076e38b59.png)
+
 
 ### Client客户端
 
@@ -78,7 +79,7 @@
 
 - 本机架备份，另外一个机架也备份
 
-![image-20210608215241965](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210608215241965.png)
+![图片](https://user-images.githubusercontent.com/39020574/121310898-70093280-c936-11eb-8421-a9355de2b62c.png)
 
 
 
@@ -96,7 +97,7 @@
 
 **用户信息上传过程**
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210609141157972.png" alt="image-20210609141157972" style="zoom:67%;" />
+![图片](https://user-images.githubusercontent.com/39020574/121310943-7bf4f480-c936-11eb-8140-1bc808c3fbad.png)
 
 ### DataNode心跳汇报和再复制
 
@@ -104,19 +105,19 @@ DataNode需要每隔一定周期向NameNode汇报自己的状态，未收到心�
 
 NameNode会根据DataNode中原有的block信息找到该block被复制的DataNode的具体位置，以 block 类别新添复制的DataNode，并向相应的 DataNode传达再复制命令。收到再复制命令的 DataNode，会在其他 DataNode上按照缺少的复制数量进行 block 复制。
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210609141440766.png" alt="image-20210609141440766" style="zoom:67%;" />
+![图片](https://user-images.githubusercontent.com/39020574/121310983-87e0b680-c936-11eb-9ff5-234569564df5.png)
 
 
 
 ### DataNode再分配—高扩展性
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210609143312132.png" alt="image-20210609143312132" style="zoom:67%;" />
+![图片](https://user-images.githubusercontent.com/39020574/121311023-9333e200-c936-11eb-8630-46258180ca86.png)
 
 新添加的DataNode却不能立马被使用，因为数据保存在其它DataNode中，如果直接将新数据添加到新DataNode中，会使得DataNode的利用率不平衡。
 
 **数据再分配**可以优化使用效率，达到平衡，但也使得大量数据从使用中的节点移动到新增节点的过程中所导致的网络负载变大的问题，一般再分配设置为根据管理员手动执行，不是自动执行。
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210609143741177.png" alt="image-20210609143741177" style="zoom:67%;" />
+![图片](https://user-images.githubusercontent.com/39020574/121311051-9af38680-c936-11eb-87d9-5ccb94be3168.png)
 
 ### DataNode的block管理
 
@@ -151,7 +152,7 @@ NameNode会根据DataNode中原有的block信息找到该block被复制的DataNo
 
 - client 和 Datanode 会将 3 步、4 步、5 步过程执行到完成所有的数据传输，传输的同时对数据进行复制
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210609150458385.png" alt="image-20210609150458385" style="zoom:67%;" />
+![图片](https://user-images.githubusercontent.com/39020574/121311083-a5ae1b80-c936-11eb-8c43-3a7e528378ca.png)
 
 ### 参考文献
 
