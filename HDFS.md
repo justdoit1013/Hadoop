@@ -1,6 +1,6 @@
 ### 具体组件介绍
 
-![图片](https://user-images.githubusercontent.com/39020574/121310854-6253ad00-c936-11eb-9000-4f8076e38b59.png)
+![图片](https://user-images.githubusercontent.com/39020574/121311282-d8f0aa80-c936-11eb-95a4-3f71243b35ef.png)
 
 
 ### Client客户端
