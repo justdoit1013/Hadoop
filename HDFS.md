@@ -1,3 +1,4 @@
+## 图片部分不全，建议pdf查看
 ### 具体组件介绍
 
 ![图片](https://user-images.githubusercontent.com/39020574/121311282-d8f0aa80-c936-11eb-95a4-3f71243b35ef.png)
